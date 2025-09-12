@@ -1,0 +1,411 @@
+@charset "UTF-8" ;
+/* 전체 */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* 바디 */
+body{
+    font-family: sans-serif;
+}
+/* a태그 */
+a{
+    color: #333;
+    text-decoration: none;
+}
+/* 컨테이너 영역 */
+.container{
+    position: relative;
+}
+/* 상단으로 이동 */
+.container .top_move{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    z-index: 500;
+}
+/* 상단이동 텍스트 색상 */
+.container .top_move a{
+    color: #fff;;
+}
+/* 헤더 */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* 헤더 정렬 */
+header .flex{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+}
+/* 헤더 왼쪽 */
+header .header_left{
+    margin: 0 30px;
+}
+/* 헤더 왼쪽 로고이미지 */
+header .header_left a img{
+    width: 140px;
+    height: 20px;
+}
+/* 헤더 왼쪽 로고링크영역 */
+header .header_left a{
+    display: block;
+    width: 170px;
+    height: 40px;
+    padding: 10px 15px;
+    object-fit: fill;
+}
+/* 헤더 메뉴 영역 */
+header .header_menu{
+    padding: 15px;
+}
+/* 헤더 메뉴 정렬 */
+header .header_menu ul{
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+}
+/* 헤더 메뉴 링크 */
+header .header_menu ul li a{
+    font-size: 18px;
+    font-weight: 500;
+}
+header .header_menu ul li a:hover{
+    color: teal;
+}
+/* 헤더 오른쪽 */
+header .header_right{
+    width: 450px;
+    height: 100%;
+    margin-left: 450px;
+    /* position: absolute;
+    top: 0;
+    right: 30px; */
+    
+}
+/* 헤더 오른쪽 정렬 */
+header .header_right ul{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+header .header_right ul li{
+    margin-left: 20px;
+}
+/* 헤더 오른쪽 텍스트 */
+header .header_right ul a{
+    font-size: 18px;
+}
+header .header_right ul a:hover{
+    color: teal;
+}
+/* 헤더 끝 */
+
+/* 섹션 시작 */
+section{
+    width: 1900px;
+    /* height: 100vh; */
+    margin: 0 auto;
+    margin-top: 170px;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: center;
+}
+/* 사이드 메뉴 */
+section .side_menu{
+    width: 400px;
+    padding: 20px;
+    padding-top: 0;
+}
+/* 사이드 메뉴 타이틀 */
+section .side_menu h2{
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+/* 제품 사이드메뉴 네비틀*/
+section .side_menu .navi1{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+/* 제품 사이드 메뉴 네비영역 */
+section .side_menu .navi1 > li{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+/* 제품 사이드 메뉴 네비영역을 호버하면 안쪽 네비보이기*/
+section .side_menu .navi1 > li:hover .navi2{
+    display: block;
+    height: 102px;
+    padding: 10px 20px;
+}
+section .side_menu .navi1 > li:hover .navi2.t_p{
+    height: 272px;
+}
+/* 안쪽 네비 호버시 색 */
+section .side_menu .navi1 > li:hover >a{
+    color: teal;
+}
+/* 사이드 메뉴 안에 내비게이션 요소 */
+section .side_menu .navi2{
+    /* 디스플레이는 트렌지션 사용불가 */
+    display: block;
+    background-color: #eee;
+    padding: 0px 20px;
+    font-weight: 400;
+    transition: all 0.8s ease;
+    height: 0px;
+    overflow: hidden;
+    
+}
+/* 사이드 메뉴 안 네비요소 상하 간격 */
+section .side_menu .navi2 li{
+    margin-bottom: 10px;
+}
+/* 안쪽 네비 텍스트 */
+section .side_menu .navi2 li a{
+    font-size: 14px;
+}
+/* 안족 네비 텍스트 호버시 색상 */
+section .side_menu .navi2 li a:hover{
+    color: teal;
+}
+/* 섹션 오른쪽 제품리스트 */
+section .item_list{
+    width: 1600px;
+    margin: 0 30px;
+}
+/* 제품 리스트 상단 버튼영역 */
+section .item_list .list_order{
+    margin-bottom: 10px;
+}
+/* 제품 리스트 상단 버튼 */
+section .item_list .list_order button{
+    border: 1px solid #aaa;
+    background-color: #fff;
+    width: 95px;
+    height: 45px;
+    border-radius: 30px;
+    color: #aaa;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* 제품 리스트 상단 버튼 호버 */
+section .item_list .list_order button:hover{
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+}
+/* 제품 리스트 상단 정렬기준 라인 */
+section .item_list .guide{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+/* 제품 영역 오른쪽 정렬 */
+section .item_list .guide .guide_list{
+    position: relative;
+}
+/* 제품 영역 오른쪽 정렬에서 아이콘 */
+section .item_list .guide .guide_list i{
+    margin-left: 8px;
+}
+/* 제품영역 오른쪽 위에보는 아이콘 */
+section .item_list .guide .guide_list i.fa-caret-up{
+    display: none;
+}
+/* 오른쪽 정렬 호버시 정렬선택 영역 */
+section .item_list .guide .guide_list:hover ul{
+    display: block;
+}
+/* 정렬영역 호버시 위에보는 아이콘 */
+section .item_list .guide .guide_list:hover i.fa-caret-up{
+    display: inline-block;
+}
+/* 정렬영역 호버시 아래보는 아이콘 */
+section .item_list .guide .guide_list:hover i.fa-caret-down{
+    display: none;
+}
+/* 오른쪽 정렬 안 정렬선택 영역 */
+section .item_list .guide .guide_list ul{
+    display: none;
+    border: 2px solid black;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 500;
+}
+/* 정렬선택 영역안 텍스트 호버*/
+section .item_list .guide .guide_list ul li a:hover{
+    background-color: black;
+    color: #fff;;
+}
+/* 정렬선택 영역안 텍스트 */
+section .item_list .guide .guide_list ul li a{
+    display: block;
+    width: 120px;
+    padding: 5px 10px;
+}
+/* 제품 리스트 */
+section .item_list .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+/* 제품 틀 */
+section .item_list .list .product{
+    width: 25%;
+    height: 500px;
+    
+}
+/* 제품 틀 안  */
+section .item_list .list .product li{
+    width: 100%;
+    padding: 6px;
+    position: relative;
+    cursor: pointer;
+    
+}
+/* 제품 틀 안 이미지 */
+section .item_list .list .product li img{
+    width: 100%;
+    height: 350px;
+}
+
+section .item_list .list .product .it::before{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    content: '';
+    background-color: rgba(0,0,0,0.02);
+    width: 355px;
+    height: 350px;
+}
+section .item_list .list .product .it::after{
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.5s;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-family: 'Font Awesome 5 Free';
+    content: '';
+    background: url(../osulloc/img/icon_cart_w@2x.png);
+    width: 30px;
+    height: 0px;
+    font-size: 16px;
+    text-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #fff;
+    background-size: 30px;
+}
+section .item_list .list .product .it:hover::after{
+    height: 30px;
+}
+section .item_list .list .product li h4{
+    margin: 15px 0;
+}
+section .item_list .list .product li p{
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+section .item_list .list .product li strong{
+    font-size: 16px;
+}
+section .item_list .list .product li strong span{
+    color: tomato;
+    margin-right: 10px;
+}
+
+/* 섹션 끝 */
+
+/* 푸터 시작 */
+footer{
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    padding: 50px;
+}
+footer .footer_left{
+    display: flex;
+    align-items: center;
+}
+footer .footer_left .logo{
+    margin-right: 50px;
+}
+footer .footer_left .company .f_navi{
+    display: flex;
+}
+footer .footer_left .company .f_navi > li{
+    width: 210px;
+}
+footer .footer_left .company .f_navi > li >a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    display: block;
+}
+footer .footer_left .company .f_navi > li ul li.tel{
+    font-size: 16px;
+    font-weight: 600;
+}
+footer .footer_left .company .f_navi > li ul li{
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+footer .footer_left .company .f_navi > li ul li a i{
+    margin-right: 3px;
+}
+footer .footer_right .notice{
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+}
+footer .footer_right .notice h6{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    font-weight: normal;
+}
+footer .footer_right .notice p{
+    margin: 5px 0;
+    font-size: 12px;
+}
+footer .footer_right .notice a{
+    display: block;
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 15px;
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osulloc</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <!-- 전체틀 영역 -->
+    <div class="container" id="container">
+        <!-- 헤더 시작 -->
+        <header id="header">
+            <!-- 헤더 정렬 -->
+            <div class="flex">
+                <!-- 헤더 왼쪽 -->
+                <div class="header_left">
+                    <a href="index.html"><img src="img/logo.png" alt="오설록 로고"></a>
+                </div>
+                <!-- 헤더 중앙 메뉴 영역 -->
+                <div class="header_menu">
+                    <ul class="menu">
+                        <li><a href="#none">제품</a></li>
+                        <li><a href="#none">추석 선물대전</a></li>
+                        <li><a href="#none">기프트</a></li>
+                        <li><a href="#none">티 라이프</a></li>
+                        <li><a href="#none">단체 및 기업 구매</a></li>
+                    </ul>
+                </div>
+                <!-- 헤더 오른쪽 이동 메뉴 -->
+                <div class="header_right">
+                    <ul class="right_menu">
+                        <li><a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a href="#none" id="cartBtn"><i class="fa-solid fa-cart-plus"></i></a></li>
+                        <li><a href="#none">출석체크</a></li>
+                        <li><a href="#none" id="loginBtn">로그인</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- 헤더 끝 -->
+
+        <!-- 섹션 시작 -->
+        <section id="section">
+            <!-- 사이드 메뉴 -->
+            <div class="side_menu">
+                <!-- 사이드 메뉴 타이틀 -->
+                <h2>제품</h2>
+                <!-- 사이드 메뉴 네비 -->
+                <ul class="navi1">
+                    <li>
+                        <!-- 네비 이름 -->
+                        <a href="#none">티 제품</a>
+                        <!-- 네비 목록 -->
+                        <ul class="navi2 t_p">
+                            <li><a href="#none">전체상품</a></li>
+                            <li><a href="#none">베스트</a></li>
+                            <li><a href="#none">티 세트</a></li>
+                            <li><a href="#none">녹차</a></li>
+                            <li><a href="#none">발효차/홍차</a></li>
+                            <li><a href="#none">블렌디드티</a></li>
+                            <li><a href="#none">허브티</a></li>
+                            <li><a href="#none">말차/밀크티/콤부차</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 네비 이름2 -->
+                        <a href="#none">티푸트</a>
+                        <ul class="navi2">
+                            <li><a href="#none">전체상품</a></li>
+                            <li><a href="#none">과자/초콜릿</a></li>
+                            <li><a href="#none">베이커리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- 네비 이름3 -->
+                        <a href="#none">라이프스타일</a>
+                        <ul class="navi2">
+                            <li><a href="#none">티웨어</a></li>
+                            <li><a href="#none">스킨케어</a></li>
+                            <li><a href="#none">정기배송</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 제품 영역 -->
+            <div class="item_list">
+                <!-- 제품 영역 상단 버튼 -->
+                <div class="list_order">
+                    <button>전체</button>
+                    <button>잎차</button>
+                    <button>피라미드</button>
+                    <button>티백</button>
+                    <button>파우더</button>
+                </div>
+                <!-- 제품 영역 상단 정렬 방식 -->
+                <div class="guide">
+                    <span>총 244개의 상품이 있습니다.</span>
+                    <div class="guide_list">
+                        <a href="#none">인기순<i class="fa-solid fa-caret-down"></i><i class="fa-solid fa-caret-up"></i></a>
+                        <ul>
+                            <li><a href="#none">인기순</a></li>
+                            <li><a href="#none">신상품순</a></li>
+                            <li><a href="#none">높은가격순</a></li>
+                            <li><a href="#none">낮은가격순</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 제품 -->
+                <div class="list">
+                    <!-- 제품 틀 -->
+                    <ul class="product">
+                        <!-- 제품 이미지 -->
+                        <li class="it"><img src="img/item01.png" alt="상품1"></li>
+                        <!-- 제품 설명 -->
+                        <li>    
+                            <h4>[보자기]티 에디션 스페셜 9종 54입</h4>
+                            <p><span>126,000</span>원</p>
+                            <strong><span>25%</span>94,500원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item02.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[보자기]차의 정원 9종 27입</h4>
+                            <p><span>64,000</span>원</p>
+                            <strong><span>22%</span>49,920원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item03.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[보자기]랑드샤 티 4종 세트</h4>
+                            <p><span>49,500</span>원</p>
+                            <strong><span>20%</span>39,600원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item04.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[보자기]마스터 브렌트 8종 32입</h4>
+                            <p><span>74,000</span>원</p>
+                            <strong><span>28%</span>53,280원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item05.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[보자기]프리미엄 티 컬렉션 10종</h4>
+                            <p><span>42,000</span>원</p>
+                            <strong><span>22%</span>32,760원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item06.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[보자기]티 에디션 스페셜 9종 54입 (민트)</h4>
+                            <p><span>126,000</span>원</p>
+                            <strong><span>25%</span>94,500원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item07.png" alt="상품1"></li>
+                        <li>    
+                            <h4>프리미엄 티 컬렉션 10종 40입</h4>
+                            <p><span>32,000</span>원</p>
+                            <strong><span>22%</span>24,960원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item08.png" alt="상품1"></li>
+                        <li>    
+                            <h4>프리미엄 말차</h4>
+                            <!-- <p><span>126,000</span>원</p> -->
+                            <strong><!-- <span>25%</span> -->23,000원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item09.png" alt="상품1"></li>
+                        <li>    
+                            <h4>마스터 블렌드 8종 32입</h4>
+                            <p><span>64,000</span>원</p>
+                            <strong><span>25%</span>48,000원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item10.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[주문폭주!9/12이후 출고]말차 리추얼 기프트</h4>
+                            <p><span>46,500</span>원</p>
+                            <strong><span>15%</span>39,525원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item11.png" alt="상품1"></li>
+                        <li>    
+                            <h4>프리미엄 티 컬렉션 9종 90입</h4>
+                            <p><span>70,000</span>원</p>
+                            <strong><span>26%</span>57,720원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item12.png" alt="상품1"></li>
+                        <li>    
+                            <h4>[상반기 재구매 1위]차의 정원 9종 27입</h4>
+                            <p><span>54,000</span>원</p>
+                            <strong><span>22%</span>42,120원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item13.png" alt="상품1"></li>
+                        <li>    
+                            <h4>티 에디션 스페셜 9종 54입</h4>
+                            <p><span>110,000</span>원</p>
+                            <strong><span>27%</span>80,300원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item14.png" alt="상품1"></li>
+                        <li>    
+                            <h4>티 에디션 아일랜드 6종 18입</h4>
+                            <p><span>36,000</span>원</p>
+                            <strong><span>25%</span>27,000원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item15.png" alt="상품1"></li>
+                        <li>    
+                            <h4>티 에디션 헤리티지 9종 63입</h4>
+                            <p><span>150,000</span>원</p>
+                            <strong><span>25%</span>112,500원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item16.png" alt="상품1"></li>
+                        <li>    
+                            <h4>오설록 와플 티 4종 세트</h4>
+                            <p><span>31,500</span>원</p>
+                            <strong><span>20%</span>25,200원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item17.png" alt="상품1"></li>
+                        <li>    
+                            <h4>오설록 랑드샤 티 4종 세트</h4>
+                            <p><span>39,500</span>원</p>
+                            <strong><span>20%</span>31,600원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item18.png" alt="상품1"></li>
+                        <li>    
+                            <h4>세작 80g 잎차 선물세트</h4>
+                            <p><span>43,500</span>원</p>
+                            <strong><span>20%</span>34,800원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item19.png" alt="상품1"></li>
+                        <li>    
+                            <h4>프리미엄 티 컬렉션 텀블러 세트</h4>
+                            <p><span>47,000</span>원</p>
+                            <strong><span>18%</span>38,540원</strong>
+                        </li>
+                    </ul>
+                    <ul class="product">
+                        <li class="it"><img src="img/item20.png" alt="상품1"></li>
+                        <li>    
+                            <h4>제주영귤 잎차 티타임</h4>
+                            <p><span>42,000</span>원</p>
+                            <strong><span>17%</span>34,860원</strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 섹션 영역 끝 -->
+
+        <!-- 네비게이션 버튼 -->
+         <div class="top_move">
+            <a href="#top">↑</a>
+         </div>
+
+        <!-- 푸터 시작 -->
+        <footer>
+            <!-- 푸터 왼쪽영역 -->
+            <div class="footer_left">
+                <!-- 푸터 왼쪽 로고 -->
+                <div class="logo"><img src="img/logo_footer.png" alt="회사로고"></div>
+                <!-- 푸터 왼쪽 네비 리스트 -->
+                <div class="company">
+                    <ul class="f_navi">
+                        <li>
+                            <a href="#none">고객 상담 센터/주문배송 문의</a>
+                            <ul>
+                                <li class="tel">080-805-5555</li>
+                                <li>help@osulloc.com</li>
+                                <li>평일 09:00 - 18:00</li>
+                                <li>점심 (12:00 - 13:00)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">특판 및 대량구매</a>
+                            <ul>
+                                <li>mall@osulloc.com</li>
+                                <li>카카오톡 ID : osullocmall</li>
+                                <li>평일 09:30 - 17:00</li>
+                                <li>점심 (11:30 - 13:00)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">회원 혜택</a>
+                            <ul>
+                                <li>1:1 문의</li>
+                                <li>오설록 멤버십 혜택</li>
+                                <li>뷰티포인트 추후적립</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">소셜미디어</a>
+                            <ul>
+                                <li><a href="#none"><i class="fa-brands fa-kakao-talk"></i>카카오톡 플러스친구</a></li>
+                                <li><a href="#none"><i class="fa-brands fa-instagram"></i>인스타그램</a></li>
+                                <li><a href="#none"><i class="fa-brands fa-youtube"></i>유튜브</a></li>
+                                <li><a href="#none"><i class="fa-brands fa-tiktok"></i>틱톡</a></li>
+                                <li><a href="#none"><i class="fa-brands fa-square-x-twitter"></i>X(구 트위터)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">LANGUAGE</a>
+                            <ul>
+                                <li>KOREAN</li>
+                                <li>ENGLISH</li>
+                                <li>CHINESE(中文)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 푸터 오른쪽 공지 -->
+            <div class="footer_right">
+                <div class="notice">
+                    <h6>공지사항</h6>
+                    <p>리뷰 개편 관련 안내드립니다.</p>
+                    <p>찻잎포인트 정책 변경 안내</p>
+                    <p>[공지]헬로키티 판매&일정&판매처 안내</p>
+                    <a href="#none">더보기&gt;</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('cartBtn').addEventListener('click',function (){
+            fetch('cart.html')
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById('section').innerHTML=data;
+            })
+        })
+        document.getElementById('loginBtn').addEventListener('click',function(){
+            fetch('login.html')
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById('container').innerHTML=data;
+            })
+        })
+    </script>
+</body>
+</html>

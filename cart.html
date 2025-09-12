@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- 컨테이너 영역 -->
+    <!-- 앞으로는 연동된 후 태그명이 겹칠 수 있으므로 조금 바꿔서 태그명 만들기 -->
+    <div class="container">
+        <!-- 섹션태그 -->
+        <section id="section">
+            <!-- 상단 제목 -->
+            <h2>장바구니</h2>
+            <!-- 장바구니 왼쪽 영역 -->
+            <div class="cart">
+                <!-- 장바구니 상품 선택 영역 폼 -->
+                <form action="#none" method="post">
+                    <!-- 선택 영역 상단 -->
+                    <div class="all_s">
+
+                        <input type="checkbox" name="item" id="all_item">
+                        <label for="all_item">전체선택</label>
+                        <a href="#none">선택 삭제</a>
+                    </div>
+                    <!-- 선택한 제품 영역 -->
+                    <ul class="item">
+                        <li>
+                            <div class="s_item">
+                                <input type="checkbox" name="item" id="item">
+                                <label for="item"></label>
+                                <img src="img/item01.png" alt="상품1">
+                                <div class="item_info">
+                                    <a href="#none">[보자기] 티 에디션 스페셜 9종 54입</a>
+                                    <p><span>포장불가</span></p>
+                                    <p>ㆍ선물 가능한 상품입니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="number">
+                                <button>-</button>
+                                <input type="number" name="number" id="number" >
+                                <button>+</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="price">
+                                <p>126,000원</p>
+                                <span>94,500원</span>
+                            </div>
+                        </li>
+                        <li>
+                            <button type="submit">바로구매</button>
+                        </li>
+                    </ul>
+                    <!-- 선택 상품 구매 버튼 영역 -->
+                    <div class="order">
+                        <button type="submit">선택상품 주문</button>
+                        <button type="submit">전체상품 주문</button>
+                    </div>
+                    <!-- 버튼 아래 경고 -->
+                    <span><i class="fa-solid fa-circle-info"></i> 장바구니에 보관된 상품은 3개월 후에 삭제 됩니다.</span>
+                </form>
+                <!-- 이벤트 광고 페이지 -->
+                <div class="event">
+                    <!-- 광고 메세지 -->
+                    <div class="event_ment">
+                        <span>아직 가시지 않은 더위, 콤부차로 상큼하게 이겨내봐요</span>
+                        <p>~9월 14일</p>
+                    </div>
+                    <!-- 광고 상품 -->
+                    <div class="event_item">
+                        <ul>
+                            <li><img src="img/item02.png" alt="상품2"></li>
+                            <li>
+                                <h2>[보자기]차의 정원 9종 27입</h2>
+                                <p>64,000원</p>
+                                <strong><span>22%</span>49,920원</strong>
+                            </li>
+                            <li>
+                                <a><i class="fa-solid fa-cart-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 오른쪽 구매 상자 -->
+            <div class="buy">
+                <ul>
+                    <li>상품 금액<span>+0원</span></li>
+                    <li>상품 할인<span>+0원</span></li>
+                    <li>포장비<span>+0원</span></li>
+                    <li>부가 쇼핑백<span>+0원</span></li>
+                    <li>배송비<span>+0원</span></li>
+                </ul>
+                <p>결제 예상 금액<span>0원</span></p>
+                <button>0원 주문하기</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

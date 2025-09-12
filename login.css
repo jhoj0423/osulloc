@@ -1,0 +1,193 @@
+@charset "UTF-8" ;
+body{
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* 헤더 영역 */
+.container header{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    background-color: #fff;
+}
+.container header h3{
+    font-size: 18px;
+    padding: 20px 0;
+}
+.container header a{
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    
+}
+.container header a img{
+    width: 25px;
+    height: 25px;
+}
+/* 섹션영역 */
+.container section{
+    margin: 0 auto;
+    width: 550px;
+    margin-top: 70px;
+    padding-top: 60px;
+    text-align: center;
+    display: block;
+}
+.container section .guide{}
+.container section .guide strong{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    
+}
+.container section .guide .keyborad{
+    text-align: right;
+    margin: 20px 0;
+}
+.container section .guide .keyborad span{
+    color: #aaa;
+    padding: 0 15px;
+}
+.container section .guide .keyborad img{
+    display: none;
+    margin-top: 20px;
+}
+.container section .guide .keyborad:hover img{
+    display: block;
+    width: 100%;
+}
+/* form 로그인 */
+.container section .login{
+}
+.container section .login form{}
+.container section .login form ul{}
+.container section .login form ul li{
+    padding: 10px;
+    text-align: left;
+
+}
+.container section .login form ul li input[type="text"],
+.container section .login form ul li input[type="password"]{
+    width: 100%;
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container section .login form ul li input[type="checkbox"]{
+    display: none;
+}
+.container section .login form ul li input[type="checkbox"]:checked + label::before{
+    background-color: teal;
+    border: 1px solid teal;
+    content: '✔';
+    color: #fff;
+}
+.container section .login form ul li label{
+    position: relative;
+    margin-left: 30px;
+}
+.container section .login form ul li label::before{
+    content: '';
+    background-color: transparent;
+    border: 1px solid #333;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 110%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    text-align: center;
+
+}
+.container section .login form ul li button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #aaa;
+}
+.container section .login form ul li button:hover{
+    color: #fff;
+    background-color: teal;
+}
+.container section .login .sns{
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+
+}
+.container section .login .sns div{
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+}
+.container section .login .sns div i{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+.container section .login .sns div .fa-mobile-screen{
+    background-color: teal;
+    color: #fff;
+}
+.container section .login .sns div .fa-kakao-talk{
+    background-color: rgb(252, 194, 59);
+    color: rgb(53, 24, 3);
+}
+.container section .login .sns div .fa-n{
+    background-color: #23b33f;
+    color: #fff;
+}
+.container section .login .sns div .fa-circle{
+    background-color: salmon;
+}
+.container section .login .find{
+    margin: 30px 0;
+}
+.container section .login .find a{
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    margin-right: 12px;
+}
+.container section .login .find a::after{
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    content: '';
+    height: 15px;
+    width: 2px;
+    background-color: #ccc;
+}
+.container section .login .find a:nth-last-child(1):after{
+    display: none;
+}
+.container section .login > a{
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+.container section .login > a span{
+    font-weight: 600;
+}
