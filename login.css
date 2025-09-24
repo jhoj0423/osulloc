@@ -108,7 +108,7 @@ body{
     text-align: center;
 
 }
-.container section .login form ul li button{
+.container section .login form ul li > a{
     width: 100%;
     padding: 15px;
     border: none;
@@ -117,7 +117,7 @@ body{
     font-size: 25px;
     color: #aaa;
 }
-.container section .login form ul li button:hover{
+.container section .login form ul li > a:hover{
     color: #fff;
     background-color: teal;
 }
