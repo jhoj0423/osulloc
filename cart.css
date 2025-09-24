@@ -168,7 +168,10 @@
     margin: auto 0;
 }
 /* 수량 버튼 */
-.container section .cart form .item li .number button{
+.container section .cart form .item li .number > a{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
     width: 40px;
     height: 40px;
     background-color: transparent;
@@ -177,7 +180,7 @@
     cursor: pointer;
 }
 /* 수량 버튼 호버 */
-.container section .cart form .item li .number button:hover{
+.container section .cart form .item li .number > a:hover{
     background-color: #ccc;
 }
 
@@ -196,7 +199,10 @@
     font-size: 18px;
 }
 /* 선택한 상품 영역 오른쪽 버튼 */
-.container section .cart form .item li > button{
+.container section .cart form .item li > a{
+    display: inline-block;
+    text-align: center;
+    line-height: 18px;
     width: 150px;
     padding: 10px;
     background-color: #fff;
@@ -207,7 +213,7 @@
     cursor: pointer;
 }
 /* 선택한 상품 영역 오른쪽 버튼 호버 */
-.container section .cart form .item li > button:hover{
+.container section .cart form .item li > a:hover{
     background-color: teal;
     color: #fff;
     font-weight: 600;
@@ -219,7 +225,10 @@
     text-align: center;
 }
 /* 선택 상품 영역하단 버튼 */
-.container section .cart form .order button{
+.container section .cart form .order > a{
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
     width: 180px;
     height: 48px;
     font-size: 15px;
@@ -232,19 +241,19 @@
 
 }
 /* 선택 상품 영역하단 왼쪽 버튼 호버*/
-.container section .cart form .order button:hover{
+.container section .cart form .order > a:hover{
     background-color: #eee;
     font-weight: 500;
 }
 /* 선택 상품 영역하단  오른쪽 버튼 */
-.container section .cart form .order button:nth-child(2){
+.container section .cart form .order > a:nth-child(2){
     background-color: teal;
     color: #fff;
     font-weight: 600;
     border: none;
 }
 /* 선택 상품 영역하단 오른쪽 버튼 호버 */
-.container section .cart form .order button:nth-child(2):hover{
+.container section .cart form .order > a:nth-child(2):hover{
     background-color: #04815b;
     font-weight: 700;
 }
@@ -384,7 +393,10 @@
     font-weight: 500;
 }
 /* 오른쪽 주문 요소 주문 버튼 */
-.container section .buy button{
+.container section .buy > a{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
     width: 100%;
     background-color: teal;
     color: #fff;
@@ -392,7 +404,7 @@
     height: 50px;
 }
 /* 주문 버튼 호버 */
-.container section .buy button:hover{
+.container section .buy > a:hover{
     cursor: pointer;
     background-color: #04815b;
     font-weight: 600;
